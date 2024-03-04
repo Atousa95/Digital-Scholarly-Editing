@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:math="http://www.w3.org/1998/Math/MathML" xml:id="zibaldone">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Zibaldone di Pensieri</title>
+                <author xml:id="G.L.">Giacomo Leopardi</author>
+                <respStmt>
+                   <resp>Encoder of English version</resp>
+                    <name xml:id="A.H.">Atousa Heidarnia</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>ZdP Project;</publisher>
+                <pubPlace>Bologna</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <author ref="#G.L.">Giacomo Leopardi</author>
+                    <title>Zibaldone di pensieri</title>
+                    <editor xml:id="R.D.">Rolando Damiani</editor>
+                    <publisher>Mondadori</publisher>
+                    <pubPlace>Milano</pubPlace>
+                    <date>2014</date>
+                </bibl>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Napoli</settlement>
+                        <repository>Biblioteca Nazionale (BNN)</repository>
+                        <idno>Carte Leopardi, C.L._V.1</idno>
+                    </msIdentifier>
+                </msDesc>
+                <listBibl>
+                    <bibl xml:id="Canti">
+                        <author ref="#G.L.">Giacomo Leopardi</author>
+                        <title ref="#Canti">Canti</title>
+                        <editor>Gavazzeni</editor>
+                        <pubPlace>Firenze</pubPlace>
+                        <publisher>Accademia della Crusca</publisher>
+                        <date>2009</date>
+                    </bibl>
+                    <bibl xml:id="Av_Fabulae">
+                        <author ref="#Aviano">Flavio Aviano</author>
+                        <title ref="#Av_Fabulae"> Fabulae cum adnotationibus. Ad usum Seminarii
+                            Patavini </title>
+                        <pubPlace>Bologna</pubPlace>
+                        <publisher>Stamperia dell'Istituto delle scienze</publisher>
+                        <date>1787</date>
+                    </bibl>
+                    <biblStruct xml:id="Operette">
+                        <analytic>
+                            <title>Prose</title>
+                            <editor ref="#R.D.">Rolando Damiani</editor>
+                        </analytic>
+                        <monogr>
+                            <author ref="#G.L.">Giacomo Leopardi</author>
+                            <title ref="#Operette">Operette Morali</title>
+                            <imprint>
+                                <publisher>Mondadori i Meridiani</publisher>
+                                <date>1988</date>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <bibl>
+                        <author xml:id="E.D.">Elio Donato</author>
+                        <title xml:id="Vita">Vita Vergilii</title>
+                    </bibl>
+                    <bibl xml:id="Epistolario">
+                        <author ref="#G.L.">Giacomo Leopardi</author>
+                        <title ref="#Epistolario">Epistolario</title>
+                        <editor>Franco Brioschi, Patrizia Landi</editor>
+                        <pubPlace>Torino</pubPlace>
+                        <publisher>Bollati Boringhieri</publisher>
+                        <date>1998</date>
+                    </bibl>
+                    <bibl xml:id="Pittori">
+                        <author ref="#Dati">Carlo Roberto Dati</author>
+                        <title ref="#Pittori">Vite de' Pittori Antichi</title>
+                    </bibl>
+              
+                    <bibl xml:id="Opere_Algarotti">
+                        <author ref="#Algarotti">Algarotti</author>
+                        <title ref="#Opere_Algarotti">Opere</title>
+                        <pubPlace>Cremona</pubPlace>
+                        <date when="1778">1778</date>
+                    </bibl>
+                    <bibl xml:id="Prosepoesie">
+                        <author ref="#G.L."> Giacomo Leopardi </author>
+                        <title ref="#ProsePoesie"> Tutte le poesie e tutte le prose </title>
+                        <editor> Emanuele Trevi e Lucio Felici </editor>
+                        <pubPlace> Roma </pubPlace>
+                        <publisher> Newton Compton </publisher>
+                        <date> 1997 </date>
+                    </bibl>
+                    <bibl xml:id="Institutiones_Oratoriae">
+                        <author ref="#Quintiliano">Quintiliano</author>
+                        <title ref="#Institutiones_Oratoriae">Institutiones Oratoriae</title>
+                        <pubPlace>Leida</pubPlace>
+                        <date when="1665">1665</date>
+                    </bibl>
+                    <bibl xml:id="Beau_Physique">
+                        <author ref="#Camper"> Petrus Camper</author>
+                        <title ref="#Beau_Physique"> Discours sur le moyen de répresenter les
+                            passions que se manifestent sur le visage. Sur la conformité entre
+                            l’hommes et les animaux et sur le Beau phisique</title>
+                        <pubPlace>Utrecht</pubPlace>
+                        <date when="17992">1792</date>
+                    </bibl>
+                    <bibl xml:id="Bacchides">
+                        <author ref="#Plauto">Plauto</author>
+                        <title ref="#Baccides">Bacchides</title>
+                        <pubPlace>Amsterdam</pubPlace>
+                        <date when="1619">1619</date>
+                    </bibl>
+                    <bibl xml:id="Rudens">
+                        <author ref="#Plauto">Plauto</author>
+                        <title ref="#Rudens">Bacchides</title>
+                        <pubPlace>Amsterdam</pubPlace>
+                        <date when="1619">1619</date>
+                    </bibl>
+                    <bibl xml:id="Vita_Alfieri">
+                        <author ref="#Alfieri">Vittorio Alfieri</author>
+                        <title ref="Vita_Alfieri">Vita di Vittorio Alfieri da Asti scritta da
+                            esso</title>
+                        <pubPlace>boh</pubPlace>
+                        <date when="1806">1806</date>
+                    </bibl>
+                    <bibl xml:id="Annali_di_scienze_e_lettere">
+                        <author ref="#Borsieri">Pietro Borsieri</author>
+                        <title/>
+                    </bibl>
+                    <bibl xml:id="Del_Sublime">
+                        <author ref="#Longino">Pseudo Longino</author>
+                        <title ref="#Del_Sublime">Trattato del Sublime, tradotto dal greco</title>
+                        <editor>Antonfrancesco Gori</editor>
+                        <pubPlace>Bologna</pubPlace>
+                        <date when="1748">1748</date>
+                    </bibl>
+                    <bibl xml:id="Ragion_Poetica">
+                        <author ref="#Gravina">Gianvincenzo Gravina</author>
+                        <title ref="#Ragion_Poetica">Della ragion poetica</title>
+                        <pubPlace>Napoli</pubPlace>
+                        <date when="1731">1731</date>
+                    </bibl>
+
+                </listBibl>
+                <listPerson>
+                    <person xml:id="Ariosto">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/71386455"
+                            ref="https://www.treccani.it/enciclopedia/ludovico-ariosto_%28Dizionario-Biografico%29/"
+                            > Ludovico Ariosto</persName>
+                    </person>
+          
+                  <person xml:id="Dante">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/97105654"
+                            ref="https://www.treccani.it/enciclopedia/dante-alighieri_%28Dizionario-Biografico%29/"
+                            > Dante Alighieri </persName>
+                    </person>
+                  
+          
+                 
+                    <person xml:id="Longino">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/42634532"
+                            ref="https://www.treccani.it/enciclopedia/cassio-longino_%28Enciclopedia-Italiana%29/"
+                            >Longino Cassio </persName>
+                    </person>
+                   
+                    
+                    <person xml:id="Breme">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/56672363"
+                            ref="https://www.treccani.it/enciclopedia/ludovico-pietro-arborio-gattinara-dei-conti-di-sartirana-dei-marchesi-di-breme_%28Dizionario-Biografico%29/"
+                            > Ludovico Pietro Arborio Gattinara dei conti di Sartirana dei marchesi
+                            di Breme </persName>
+                    </person>
+                    <person xml:id="Petrarca">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/39382430"
+                            ref="https://www.treccani.it/enciclopedia/francesco-petrarca_%28Dizionario-Biografico%29/"
+                            >Francesco Petrarca</persName>
+                    </person>
+                    <person xml:id="Testi">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/73902706"
+                            ref="https://www.treccani.it/enciclopedia/fulvio-testi_(Dizionario-Biografico)"
+                            >Fulvio Testi</persName>
+                    </person>
+                    <person xml:id="Filicaia">
+                        <persName type="pers_citata" sameAs="http://viaf.org/viaf/2565277"
+                            ref="https://www.treccani.it/enciclopedia/vincenzo-filicaia_(Dizionario-Biografico)"
+                            > Vincenzo Filicaia </persName>
+                    </person>
+                 
+                </listPerson>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    
+   <text type="20">
+      <body>
+         <pb xml:id="p_20" n="20"/>
+         <p> <persName ref="#Breme">Breme</persName> Breme has forgotten that philosophical observation, old though it is, that <lb/>the simplest, truest, and surest means are always the last that men discover, <lb/>and so it is in the arts and the professions, as in the ordinary things of life, and <lb/>in everything. And so the last thing achieved by someone who feels and wants <lb/> to express the emotions of his heart, etc., is simplicity and naturalness, and the <lb/>first thing is artifice and affectation, and someone who has not studied and has <lb/>not read and is, as these people say, immune to the prejudices of art, and in<lb/>nocent, etc., certainly does not write with simplicity, but quite the opposite. <lb/>We see it in young children when they begin to compose: they do not write
+            with simplicity and naturalness at all, for, if that were the case, the best writ<lb/>ings
+            would be those of children, whereas, on the contrary, one sees only exag<lb/>gerations
+            and affectations and refi nements, albeit clumsy ones, and the simplicity
+            that is there is not simplicity but childishness. You could say the same thing
+            about certain popular songs, etc. etc., which, in a certain sense, are simple, but
+            put a little of that simplicity alongside Anacreon’s, which seems unsurpass<lb/>able,
+            and see whether you think it can still be called simplicity. Hence the aim
+            of art, which these people criticize, is not art at all but nature, and the height of
+            art is naturalness and the concealment of art, which novices and the ignorant
+            are unable to conceal, even though they have very little of it, but that very little
+            shines through, and the cruder it is, the more nauseating. And Horace’s nine
+            years,1 which Breme ridicules, were certainly not spent increasing the artifice
+            of his writing, but in reducing it, or, rather, in increasing it in order to conceal
+            it, and in other words to come ever closer to nature, which is the aim of all
+            those studies and those emendations, etc., which Breme mocks, which the
+            Romantics mock, contradicting themselves, because,</p>
+      </body>
+   </text>
+            <text type="21">
+                <body>
+                   <pb xml:id="p_21" n="21"/><p>they curse art
+                      and extol nature, they fail to realize that where there is less art, there is less
+                      nature.</p>
+                   <p xml:id="p21_1" n="21.1"> The poet must not only imitate and depict nature perfectly but also imitate
+                      and depict it naturally; indeed, he who does not imitate nature naturally does
+                      not imitate nature.That’s why <persName ref="#Ovid">Ovid</persName>, who depicts nature without naturalness,
+                      that is, who pursues those objects to such an extent that in the end he presents
+                      them to us, and even enables us to see and touch and feel them, but only after
+                      infinite labor on his part (so that he needs a page to show us what<persName ref="#Dante">Dante</persName>shows
+                    us in a terzina), and with more tenacity than effi cacy, soon becomes tiresome
+                      and, what’s more, unpleasing, because he is unable to conceal his art, and with
+                      so much circling around the objects (not only because of rash intemperance
+                      and restlessness but also because he is unable to describe the figure without a
+                      lot of details, and if he were not lengthy he would not be clear) he displays dili<lb/>gence,
+                      and diligence in poets is the opposite of naturalness. What poets must
+                      seem to display, besides the objects imitated, is a beautiful negligence, and this
+                      is what we see in the ancients, who were masters of this most necessary and
+                      essential art, this is what we see in <persName ref="#Ariosto">Ariosto</persName>,<persName ref="#Petrarca"
+                         >Petrarca</persName>,etc., this is what is lack<lb/>ing
+                      unfortunately even in the best and most classic of the moderns, this is what
+                      is not achieved through sentimentality, or through  <persName ref="#Breme">Breme</persName>’s system, or in mod<lb/>ern
+                      French poetry, nor can it be achieved, because this very sentimentality re<lb/>veals
+                      a certain diligence, etc., it reveals, in short, the poet who is speaking, etc.
+                   </p>
+                   <p xml:id="p21_2" n="21.2">In <persName ref="#Ovid">Ovid</persName> we see, in short, that he wants to depict and do what is so difficult
+                      with words, to show the fi gure, etc., and we see the work he puts into it. In
+                      <persName ref="#Dante">Dante</persName> no: he seems to want to tell a story and do what is easy with words, and
+                      in the way that words are ordinarily used, and he describes exquisitely, and yet
+                      the work he puts into it cannot be seen, he doesn’t point out this or that little
+                      detail, and he raised his hand and shook it and turned a little and so forth (as
+                      the Romantics do in their descriptions, and in general those En glish or French
+                      descriptive poets, as well as prose, etc., lately so much in vogue). In short, in
+                      <persName ref="#Dante">Dante</persName> there is negligence, in <persName ref="#Ovid">Ovid</persName> not.</p>
+                      
+            <p xml:id="p21_3" n="21.3"><seg source="#Quiete2">
+                    <l>Sì come dopo la procella oscura<lb/> Canticchiando gli augelli escon del
+                        loco<lb/> Dove cacciogli il vento (nembo) e la paura;<lb/></l>
+                    <l>E il villanel che presso al paterno foco<lb/> Sta sospirando il sol, si
+                        riconforta (si rasserena)<lb/> Sentendo il dolce canto e il dolce
+                        gioco</l>
+                </seg>
+               <seg source="#en.translate">
+                  <l>[As after the dark tempest
+                     <lb/>Birds singing leave the place
+                     <lb/>Where wind (storm) and fear drove them;
+                  </l>
+                  <l>And the villager at his hearth
+                     <lb/>Yearning for the sun, is comforted (is cheered)
+                     <lb/>By the sound of sweet song and sweet merriment;]1</l>
+               </seg>
+            </p>
+                   <p xml:id="p21_4" n="21.4"> The great majority of useful works bring plea sure indirectly, showing how
+                      <lb/>we can obtain it. Poetry brings it immediately, provides it for us.</p>
+            <p xml:id="p21_5" n="21.5">
+                <seg source="#Dialogo_Murco_Filosofo"><persName
+                   ref="#Longinus">Longinus</persName>asked (at the end of his treatise On the Sublime) why there were
+                   so few great men in his time and gave the explanation that it was partly be<lb/>cause
+                   of the end of the republics and of liberty, and partly because of avarice,
+                   lust, and sloth.Now these are not the mothers but the sisters of that effect of
+                   which we speak. And they all derive from the progress of reason and civiliza<lb/>tion,
+                   and from the absence or weakening of illusions, without which there will
+                   almost never be greatness of thought, or power and force and boldness of
+                   spirit, or great actions, which are usually a kind of madness. But when every<lb/>one
+                   is thoroughly enlightened as to how glory, patriotism, liberty, etc. etc., are
+                   vain delights and goods without substance, he looks for something solid, ob<lb/>scene
+                   carnal pleasures,etc.
+                </seg>
+            </p>
+                </body>
+           
+            </text>
+            <text type="22">
+                <body>
+                    <pb xml:id="p_22" n="22"/><p>
+                       in other words earthly pleasures, he looks for
+                       personal benefit whether in money or otherwise, and becomes necessarily
+                       selfish, unwilling to make sacrifi ces for imaginary rewards, or to compromise
+                      himself for others, or to place at risk a greater asset such as life, property, etc.,
+                       for a lesser one, such as praise, etc. (not to mention that civilization makes all
+                       men the same, removing and suppressing differences, and the distribution of
+                       wisdom and good qualities does not increase the mass but fragments it, so
+                     that, reduced to small portions, it produces small effects). This leads to avarice,
+                     lust, and sloth, and from them the barbarism that follows the excess of civilizat<lb/>ion.
+                       And so there is no doubt that the progress of reason and the extinction of
+                    </p>
+                </body>
+            </text>
+            <text type="23">
+                <body>
+                    <pb xml:id="p_23" n="23"/><p>
+                       <persName ref="#Bruto">Bruto</persName> illusions produce barbarism, and an excessively enlightened population cer<lb/>tainly
+                       does not become highly civilized, as the philosophers of our day, Mme.
+                     de Staël, etc., imagine, but barbarous.1 We are moving fast in this direction
+                     and have almost arrived. The greatest enemy of barbarism is not reason but
+                       nature. Nature (if properly followed, however) provides us with illusions that,
+                       in their right place, make a people truly civilized, and certainly no one would
+                       <l/>describe the Romans when they fought the Carthaginians, or the Greeks at
+                       Thermopylae, as barbarians, even though, for both populations, it was a time
+                      of very powerful illusions and was hardly philosophical at all. Illusions are
+                    natural, inherent to the system of the world. When they are removed com<lb/>pletely
+                       or almost completely, man is denatured, and every denatured people is
+                      barbarous, for things can no longer run as the system of the world requires.
+                       Reason is a light; nature seeks to be illuminated by reason, not burned. As I
+                       say happened with the Greeks and the Romans: at the time of Longinus, they
+                       were already almost barbarous, yet there had been no foreign invasion; barba<lb/>rism
+                       arose from their very own land, from those most civilized lands, because
+                       civilization had become excessive. Cicero was the advocate of illusions.2 Read
+                       in particular the Philippics, but then all of his other po liti cal orations. He is
+                       always seeking to persuade the Romans to act in pursuit of their illusions, al<lb/>ways
+                       with the example of their forebears, glory, liberty, patriotism, death
+                       rather than servitude. What a disgrace is this: Antony, a tyrant of this race, is
+                       still alive, etc. And yet, though Antony in other times would have been stabbed
+                       in the Forum or in the Curia as a most shameful tyrant, in Rome they could
+                       not succeed, even with so many armies against him, and with so much reason
+                       to hope that he would be defeated, that he would be declared an enemy of the
+                       state; they calculated, sought, etc., what in other times would have been agreed
+                       unanimously without a moment’s hesitation. Cicero argued in vain, there were
+                       no longer the illusions of earlier times, reason had come, people didn’t give a
+                       fig about patriotism glory benefi t to others to posterity, etc.; they had become
+                        egoists, they weighed the benefi t to themselves, worried about what might
+                        happen, forgot boldness and drive, forgot greatness of spirit, the example of
+                      their forebears was a triviality [23] in times so changed. And so they lost their
+                       freedom, they were unable to retain and defend what even Brutus had done out
+                       of a last vestige of illusion; the emperors came, lust and sloth increased, and
+                      shortly afterward, with so much more of philosophy, books, science, experi<lb/>ence,
+                       history, they had become barbarous.
+                       ,lb/>And reason, by making us naturally inclined to pursue our own advantage,
+                       and removing the illusions that bind us to one another, dissolves society absolutely
+                       and turns people to savagery.
+                    </p>
+                <p xml:id="p23_2" n="23.2">
+                   It seems that even the love of wonder has to be reduced to love of the extraordinary
+                   and hatred of the boredom produced by uniformity.</p>
+                <p xml:id="p23_3" n="23.3">
+                   <seg source="#Erminia2"><l>Seeing the moon journey with me.</l></seg>
+                </p>
+                   <p xml:id="p23_4" n="23.4">It is not fanciful but rather reasonable and true to place the heroic periods
+                      among the most ancient people. The heroism and self-sacrifice and glorious
+                      death, etc., discussed by  <persName
+                         ref="Breme">Breme</persName><quote source="#Spettatore_47">Spettatore p.47</quote> end with illusions, and no
+                      fool wishes these for himself in a period of reason and philosophy, like the
+                      present, one that, as such, is what I have said it is, a period totally devoid of
+                      heroism, etc.</p>
+                   <p xml:id="p23_5" n="23.5">The only lyric poet, ancient or modern, in whom you find that feeling
+                      which inspires eloquence and by dazzling less persuades and moves us more,
+                      especially where tenderness is concerned,is <persName ref="#Petrarch,">Petrarch,</persName>,at the very least to that
+                      extent. And however superior Horace might be in his images and ideas, in
+                      such feeling and eloquence and plentifulness he cannot even approach comparison
+                      with Petrarch, whose style (here I am talking not only about the love
+                      poems but also particularly and especially about the three lyric poems:<quote source="#RVF_28">O aspettata
+                        in ciel beata e bella</quote>, <quote source="#RVF_53">Spirito gentil che quelle
+                           membra reggi</quote>, <quote source="#RVF_128">Italia mia</quote> ec.) also has a simplicity and candor all its own, which yet is flexible
+                      and admirably fits the nobility and magnificence of the utterance (as in: <quote source="#RVF_28">Pon
+                        mente al temerario ardir di Serse</quote> ec.) 
+                       both in the whole structure, and continually, and in the various parts and in
+                       those passages where he rises to greater sublimity and nobility than usual. His
+                       style bends to his ideas (as in: <quote source="#RVF_53"> Rade volte addivien che a l’alte imprese,” etc.
+                           [“Rarely it happens that noble ventures</quote> ec.) qventures”]), even if few of any note are to be
+                       found in these three poems. It adapts wonderfully to the images that abound in
+                       the three poems and which are grafted onto the style and are its lifeblood, etc.(such as: <quote source="#RVF_128">Al qual come si legge, Mario
+                           aperse sì ’l fianco</quote> ec. <quote>[Whom, as
+                               we read, Marius so wounded]</quote>,<quote>Di lor vene ove il nostro ferro mise</quote> ec.<quote>[With their veins where he plunged our steel]</quote>, <quote
+                                   source="#RVF_53">Le man le avess’io avvolte entro i capegli</quote> ec. <quote>[Would that I had my hands clutched in her hair],</quote> etc. </p>
+                    <p xml:id="p23_6" n="23.6"> Il <persName ref="#Testi">Testi</persName>Testi’s writing is competently poetic and elegant, not lacking in imagination,
+                        and also has some nice little images (as when he says of David: 
+                        <quote>E allor
+                            che in Oriente il dì nascea / Usciva a pascer l’agne / Su la costa del monte o
+                            lungo il rio</quote>[<quote>And when the day dawned in the East he went out to graze his
+                                sheep on the mountainside or along the stream]</quote>, in his poem <quote>Nelle squallide spiagge
+                                    ove Acheronte </quote>) It has adequate grandeur and some elegance; the
+                        ideas, though not new, are neither ill-placed nor ill-stated; he is also fairly successful
+                        in his philosophical Canzoni in the style of Horace.He often imitates
+                        and sometimes almost translates Horace, but does not have his lively and wellhoned
+                        style, or his concise ner vous ness and muscularity and energy and spirit,
+                        or great originality or novelty, or what you could really call sublimity in concept
+                        and invention. But all the qualities that I have described, save only grandeur
+                        and eloquence, shine above all in the Canzoni in the fi rst part, which are  mostly philosophical and Horatian, and in which the style is pure and there is
+                        no lack of elegance in manner and concepts. For in the other parts, although
+                        they are more exalted and show more strength and eloquence and more powerful
+                        descriptions, and are, in short, more reminiscent of Pindar, it is diffi cult to
+                        fi nd a canzone that is not smeared roughly and shabbily and visibly and per sistent
+                        ly with the tar of his century, which in the fi rst part is just visible here and
+                        there as tiny spots, and perhaps one or two canzoni are entirely unblemished by
+                        it and might appear to be from another century.His writing also</p>
+                </body>
+                
+            </text>
+            <text type="24">
+                <body>
+                    <pb xml:id="p_24" n="24"/>
+                    <p> becomes
+                        less elegant and clean, and the words and turns of phrase, meta phors, fi gures
+                        of speech are often prosaic. In short, one sees too much of the feverishness and
+                        shoddiness and lack of polish of the seventeenth century.Belonging only to Petrarch, as far as feeling is concerned, are not just abundance
+                        but also those outbursts full τοῦ πάθους [of pathos] and those affectionate
+                        images (such as: <quote>E la povera gente sbigottita </quote>[<quote>And the poor terror- stricken
+                            people],</quote>1 etc.) and all else that constitutes true, lively, and spirited eloquence.
+                        And from the heart’s infl uence in Petrarch’s poetry comes the softness and
+                        unctuousness almost, like that of the smoothest oil, of his Canzoni (and particularly
+                        those on Italy). The odes of others seem dry and hard and arid in comparison
+                        to his, and while he lacks none of the sublimity that others have, he
+                        also has the softness and mellowness that comes from the heart.</p>
+                    <p xml:id="p24_2" n="24.2"><persName ref="#Filicaia"
+                        >Filicaia</persName> pursues the sublime and also manages to achieve it, but by speaking
+                        always of matters pertaining to our Religion he has taken to imitating that
+                        supreme sublimity of Scripture, and it is for this supreme sublimity that he is
+                        admired. When he does not seek it or does not achieve it, there is almost nothing
+                        out of the ordinary about his work, he is never elegant, he has none of
+                        Testi’s variety, etc. But even when he achieves that supreme sublimity of style
+                        similar to Scripture or prophecy, he is not very pleasing, because of the monotony
+                        of his Canzoni and because the impressions of that supreme sublimity
+                        are too vehement and therefore cannot last very long and fade away, and the
+                        reader becomes inured, so that, with this monotony, the sublime becomes ineffectual
+                        and his poems become tedious. The best are the ones on the siege and
+                        liberation of Vienna, and among these, in my view, the one that begins <quote>Le
+                            corde d’oro elette.</quote> Here and there, they bear the stains of seventeenth- century
+                        style. There is no lack of prosaic words, turns of phrase, or meta phors, such as <quote>A tua Pietà m’appello</quote>
+                        <quote>[To your Mercy I appeal]</quote> in the first Canzone, and
+                        in the second:<quote>E al tuo soldo arrolata è la vittoria</quote><quote>[And in your ser vice is
+                            victory enrolled]</quote>.</p>
+                </body>
+            </text>
+          
+</TEI>

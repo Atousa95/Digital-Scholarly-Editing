@@ -1,0 +1,406 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f5f0; /* light green background */
+    color: #333; /* dark text color */
+}
+
+header {
+    background-color: #1a532c; /* dark green header background */
+    padding: 20px;
+    color: #fff; /* white text color */
+}
+
+header h1 {
+    margin: 0;
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+main {
+    padding: 20px;
+}
+
+/* Additional style for the footer */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Make the footer span the entire width */
+    background-color: #1a532c; /* Dark green background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Paragraph Styles */
+main p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add bottom margin to paragraphs */
+}
+
+/* First Paragraph Styles */
+main p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ccc;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #8B4513; /* Brown color */
+    padding: 20px;
+    z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.text-with-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-with-icon p {
+    margin: 0;
+}
+
+.text-with-icon i {
+    margin-left: 10px; /* Adjust the spacing between text and icon */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.color-changing-text {
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    animation: rainbow 5s infinite; /* Apply the rainbow animation */
+    font-weight: bold; /* Make the text bold */
+}
+
+@keyframes rainbow {
+    0% { color: #e70c0c; } /* Red */
+    20% { color: #ff7f00; } /* Orange */
+    40% { color: #ffff00; } /* Yellow */
+    60% { color: #00ff00; } /* Green */
+    80% { color: #7676ca78; } /* Blue */
+    100% { color: #b15ab1; } /* Magenta */
+}
+
+.pfirst {line-height: 2;
+font-size: large;
+text-align:justify
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+}
+/* Initial styling for the section */
+section {
+    margin-bottom: 20px;
+    transition: transform 0.5s ease-in-out; /* Add transition with ease-in-out timing */
+}
+
+/* When hovering over the section, scale it to 1.02 times its original size */
+section:hover {
+    transform: scale(1.02);
+}
+
+/* When the section has the 'clicked' class, keep it scaled to 1.02 times its original size */
+section.clicked {
+    transform: scale(1.02);
+}
+
+
+/* Styles for article container */
+.article-container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.article {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article h2 {
+    color: #333;
+}
+
+.article p {
+    color: #666;
+}
+
+/* Pagination styles */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+.pagination a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.pagination .prev {
+    float: left;
+}
+
+.pagination .next {
+    float: right;
+}
+#downloadLink {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #4CAF50; /* Green background color */
+    color: white;
+    text-decoration: none;
+    border: 1px solid #4CAF50; /* Green border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+#downloadLink:hover {
+    background-color: white;
+    color: #4CAF50;
+    border-color: #4CAF50;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow on hover */
+}
+
+#downloadLink:active {
+    background-color: #4CAF50; /* Green background color on click */
+    color: white;
+    border-color: #4CAF50;
+    box-shadow: none; /* Remove shadow on click */
+}
+/* Your custom CSS file (styles.css) */
+h2 .fa-file-alt {
+    color: navy; /* Set the color to navy */
+    margin-right: 10px; /* Adjust the spacing between the icon and the text */
+}
+#baillot {/* Your custom CSS file (styles.css) */
+      text-shadow: 2px 2px 4px rgba(0, 0, 128, 0.611); /* Add navy shadow to the text */
+    }
+.baillot {line-height:2;
+font-size: medium;
+text-align:justify;}
+#shilli{text-shadow: 2px 2px 4px rgba(242, 104, 12, 0.652); /* Add navy shadow to the text */}
+ 
+#sec{display: inline-block;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 128, 0.611); /* Green background color */
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 128, 0.611); /* Green border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;}
+
+#sec:hover {
+    background-color: white;
+    color:rgba(0, 0, 128, 0.611);
+    border-color: rgba(0, 0, 128, 0.611);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow on hover */}
+
+#sec:active {
+    background-color:  rgba(0, 0, 128, 0.611); /* Green background color on click */
+    color: white;
+    border-color:  rgba(0, 0, 128, 0.611);
+    box-shadow: none; /* Remove shadow on click */}
+
+.shilli {line-height:2;
+    font-size: medium;
+    text-align:justify;}   
+
+
+  #third{display: inline-block;
+    padding: 5px 10px;
+    background-color: rgba(242, 104, 12, 0.652); /* Green background color */
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgba(242, 104, 12, 0.652); /* Green border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;}
+
+  #third:hover {
+    background-color: white;
+    color:rgba(242, 104, 12, 0.652);
+    border-color: rgba(242, 104, 12, 0.652);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow on hover */}
+
+  #third:active {
+    background-color: rgba(242, 104, 12, 0.652);
+    color: white;
+    border-color: rgba(242, 104, 12, 0.652);
+    box-shadow: none; /* Remove shadow on click */}  
+
+  #van {text-shadow: 2px 2px 4px#b15ab1ce; /* Add navy shadow to the text */
+  }
+
+  .van{line-height:2;
+    font-size: medium;
+    text-align:justify;}
+
+
+    #forth{display: inline-block;
+        padding: 5px 10px;
+        background-color: #b15ab1ce; /* Green background color */
+        color: white;
+        text-decoration: none;
+        border: 1px solid #b15ab1ce; /* Green border */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;}
+
+      #forth:hover {
+        background-color: white;
+        color:#b15ab1ce;
+        border-color: #b15ab1ce;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow on hover */}
+    
+    #forth:active {
+        background-color: #b15ab1ce; /* Green background color on click */
+        color: white;
+        border-color: #b15ab1ce;
+        box-shadow: none; /* Remove shadow on click */}  
+
+        .back-to-top {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            text-decoration: none;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #f5f5f5;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+            transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+          }
+          
+          .back-to-top:hover {
+            color: #a21f08;
+            transform: scale(1.1);
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+          }
+          
+          .back-to-top i {
+            transform: rotate(45deg);
+          }
+      
+        
